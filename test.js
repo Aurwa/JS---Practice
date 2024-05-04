@@ -1,1 +1,2 @@
-console.log("aurwa")
+console.log("aurwa");
+console.log("zafar");
