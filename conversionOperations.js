@@ -29,5 +29,21 @@ let sample = +'aurwa'           // => Unary plus operator
 //console.log(typeof sample)
 //console.log(sample)
 
+//console.log(String (123 + 'abc'));
 
-console.log(String (123 + 'abc'));
+
+// **********************  OPERATIONS  *********************
+
+let str1 = 1
+let str2 = "2"
+let str3 = str1 + str2
+//console.log(str3);
+//console.log(typeof str3);
+
+//console.log("1" + 2 + 2);
+//console.log(1 + 2 + "2");
+
+console.log(typeof +true)
+
+
+
