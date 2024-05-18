@@ -15,7 +15,18 @@ console.log(undefined < 0);
 console.log(undefined >= 0);
 */
 
-console.log(null == 0);
-console.log(null >= 0);
-console.log(typeof null);
+
+// ***********   NON-Primitive DATATYPE  ***********
+
+const myArray = ["one", "two", "three"];
+const myObj = {
+    name: "Aurwa",
+    age: 25
+}
+
+console.log(typeof myObj);
+
+
+
+
 
