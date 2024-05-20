@@ -22,4 +22,12 @@ So, when you access characters using square brackets [], you're essentially trea
 //console.log(newString);
 
 const newString = gameName.substring(0, 5);
-console.log(newString);
+//console.log(newString);
+
+const anotherStr = "    Aurwa   ";
+console.log(anotherStr);
+console.log(anotherStr.trim());
+
+const url = "aurwa.com%20chaudary"
+console.log(url.replace("%20", "-"));
+console.log(url.includes("aurwa"));
