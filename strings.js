@@ -13,4 +13,5 @@ When you create a string using the new String() constructor, you're creating a s
 
 So, when you access characters using square brackets [], you're essentially treating it like an array or array-like object, which is a common practice in JavaScript. 
 */
-console.log(gameName);
+//console.log(gameName);
+console.log(gameName.toUpperCase());
