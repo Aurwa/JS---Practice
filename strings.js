@@ -5,7 +5,7 @@ let age = 25;
 
 //console.log(`My name is ${name} and my age is ${age}`);
 
-const gameName = new String('Hiteshhc'); 
+const gameName = new String('Hitesh-hc'); 
 /*
 object of type 'String' => This object can access all porperties of strings.
 
@@ -15,6 +15,11 @@ So, when you access characters using square brackets [], you're essentially trea
 */
 //console.log(gameName);
 //console.log(gameName.toUpperCase());
+//console.log(gameName.charAt(3));
+//console.log(gameName.indexOf('h'));
 
-console.log(gameName.charAt(3));
-console.log(gameName.indexOf('h'));
+//const newString = gameName.slice(-6, 7);
+//console.log(newString);
+
+const newString = gameName.substring(0, 5);
+console.log(newString);
