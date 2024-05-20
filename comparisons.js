@@ -24,7 +24,39 @@ const myObj = {
     age: 25
 }
 
-console.log(typeof myObj);
+//console.log(typeof myObj);
+
+
+// ***********   MEMORY IN JS  ***********
+/*
+Stack memory => Primitives
+Heap memory => Reference types
+
+*/
+
+let youtubeChannelName = "Hitesh Chaudary";
+let anotherName;
+anotherName = youtubeChannelName;
+//console.log(anotherName);
+anotherName = "Chai and Code";
+//console.log(youtubeChannelName);
+//console.log(anotherName);
+
+
+let userOne = {
+    name: "Hitesh",
+    age: 25
+}
+
+let userTwo = userOne;
+userTwo.age = 26;
+console.log(userOne.age);
+console.log(userTwo.age);
+
+
+ 
+
+
 
 
 
