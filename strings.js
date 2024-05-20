@@ -17,3 +17,4 @@ So, when you access characters using square brackets [], you're essentially trea
 //console.log(gameName.toUpperCase());
 
 console.log(gameName.charAt(3));
+console.log(gameName.indexOf('h'));
