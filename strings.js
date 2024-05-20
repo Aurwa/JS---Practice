@@ -5,7 +5,7 @@ let age = 25;
 
 //console.log(`My name is ${name} and my age is ${age}`);
 
-const gameName = new String('Hitesh-hc'); 
+const gameName = new String('Hitesh-hc-com'); 
 /*
 object of type 'String' => This object can access all porperties of strings.
 
@@ -25,9 +25,11 @@ const newString = gameName.substring(0, 5);
 //console.log(newString);
 
 const anotherStr = "    Aurwa   ";
-console.log(anotherStr);
-console.log(anotherStr.trim());
+//console.log(anotherStr);
+//console.log(anotherStr.trim());
 
 const url = "aurwa.com%20chaudary"
-console.log(url.replace("%20", "-"));
-console.log(url.includes("aurwa"));
+//console.log(url.replace("%20", "-"));
+//console.log(url.includes("aurwa"));
+console.log(gameName.split("-"))
+console.log(gameName.split("-", 2))
