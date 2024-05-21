@@ -1,9 +1,9 @@
 let name = "Aurwa";
 
 //console.log(typeof name);
-let age = 25;
+let age = 25; 
 
-//console.log(`My name is ${name} and my age is ${age}`);
+console.log(`My name is ${name} and my age is ${age}`);
 
 const gameName = new String('Hitesh-hc-com'); 
 /*
