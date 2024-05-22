@@ -80,8 +80,41 @@ const dc = ["superman", "spiderman"]
 // marvel.push(dc)
 // console.log(marvel);
 
-const heros = marvel.concat(dc)
-console.log(heros);
+//const heros = marvel.concat(dc)
+//console.log(heros);
+// const heros = [...marvel, ...dc]
+// console.log(heros);
+
+
+// const array = [1,2,3, [4,5,6,2], [1,[8,9],10]]
+// const newArr = array.flat(3);
+// console.log(newArr);
+
+//const name = new Array.isArray("Aurwa") 
+// Methods like Array.isArray are static methods of the Array constructor. They are not constructors themselves and should not be used with new.
+const name = Array.isArray("Aurwa") 
+//console.log(name);
+
+const newArr = Array.from("Aurwa");
+//console.log((newArr));
+
+const obj1 = {
+    name: "Aurwa",
+    age: 25
+}
+
+const arr1 = Array.from(Object.values(obj1))
+//const arr1 = Array.from(Object.keys(obj1))
+//console.log(arr1);
+
+const score1 = 100;
+const score2 = 200;
+const score3 = 300;
+console.log(Array.of(score1, score2,score3));
+// console.log(Array.from(score1, score2,score3));
+
+
+
 
 
 
