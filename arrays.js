@@ -65,14 +65,24 @@
 // console.log(arr);
 
 
-const arrayLike = {
-    length: 4,
-    0: 2,
-    1: 3,
-    2: 4,
-    3: 33, 
-  };
-  console.log(Array.prototype.slice.call(arrayLike, 1, 3));
+// const arrayLike = {
+//     length: 4,
+//     0: 2,
+//     1: 3,
+//     2: 4,
+//     3: 33, 
+//   };
+//   console.log(Array.prototype.slice.call(arrayLike, 1, 3));
+
+const marvel = ["thor", "ironman"]
+const dc = ["superman", "spiderman"]
+
+// marvel.push(dc)
+// console.log(marvel);
+
+const heros = marvel.concat(dc)
+console.log(heros);
+
 
 
 
