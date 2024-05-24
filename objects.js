@@ -12,6 +12,8 @@ const JsUser = {
   location: "Islamabad",
   email: "zafar@gmail.com",
   [mySym]: "myKey1",
+  isLoggedIn: false,
+  lastLoginDays: ["Saturday", "Monday"],
 };
 
 // console.log(JsUser.email);
@@ -21,7 +23,12 @@ const JsUser = {
 // console.log(JsUser[mySym]);
 
 JsUser.email = "z@gmail.com";
-console.log(JsUser);
-Object.freeze(JsUser);
+//console.log(JsUser);
+//Object.freeze(JsUser);
 JsUser.age = 29;
-console.log(JsUser);
+//console.log(JsUser);
+JsUser.greeting = function () {
+  return `Hello User ${JsUser.name}`;
+};
+
+console.log(JsUser.greeting());
