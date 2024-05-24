@@ -75,3 +75,4 @@ const users = [
 //console.log(users[1].id);
 //console.log(tindUser);
 console.log(Object.entries(tindUser));
+console.log(tindUser.hasOwnProperty("isLoggedIn"));
