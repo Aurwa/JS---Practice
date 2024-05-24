@@ -17,4 +17,11 @@ const JsUser = {
 // console.log(JsUser.email);
 // console.log(JsUser["email"]);
 // console.log(JsUser["full name"]);
+// console.log(JsUser);
+// console.log(JsUser[mySym]);
+
+JsUser.email = "z@gmail.com";
+console.log(JsUser);
+Object.freeze(JsUser);
+JsUser.age = 29;
 console.log(JsUser);
