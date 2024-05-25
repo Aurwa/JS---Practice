@@ -33,7 +33,6 @@
 
 // console.log(JsUser.greeting());
 
-/*
 const tindUser = {};
 tindUser.id = "123abc";
 tindUser.name = "Sammy";
@@ -75,10 +74,19 @@ const users = [
 
 //console.log(users[1].id);
 //console.log(tindUser);
-console.log(Object.entries(tindUser));
-console.log(tindUser.hasOwnProperty("isLoggedIn"));
-*/
+//console.log(Object.entries(tindUser));
+//console.log(tindUser.hasOwnProperty("isLoggedIn"));
 
+const course = {
+  courseName: "Javascript",
+  price: 999,
+  courseInstructor: "Hitesh",
+};
+
+const { courseInstructor: instructor } = course;
+console.log(instructor);
+
+/*
 const tindUser = {};
 tindUser.id = "123abc";
 tindUser.name = "Sammy";
@@ -124,3 +132,4 @@ const users = [
 //console.log(users[2].id);
 
 console.log(tindUser.hasOwnProperty("isLoggedIn"));
+*/
