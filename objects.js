@@ -33,6 +33,7 @@
 
 // console.log(JsUser.greeting());
 
+/*
 const tindUser = {};
 tindUser.id = "123abc";
 tindUser.name = "Sammy";
@@ -75,4 +76,51 @@ const users = [
 //console.log(users[1].id);
 //console.log(tindUser);
 console.log(Object.entries(tindUser));
+console.log(tindUser.hasOwnProperty("isLoggedIn"));
+*/
+
+const tindUser = {};
+tindUser.id = "123abc";
+tindUser.name = "Sammy";
+tindUser.isLoggedIn = false;
+
+const regularUser = {
+  email: "sam@gmail.com",
+  fullName: {
+    userFullName: {
+      firstName: "Sam",
+      lastName: "Sammy",
+    },
+  },
+};
+//console.log(regularUser.fullName.userFullName.firstName);
+
+obj1 = { 1: "a", 2: "b" };
+obj2 = { 3: "c", 4: "d" };
+// obj3 = Object.assign({}, obj1, obj2);
+const obj3 = { ...obj1, ...obj2 };
+//console.log(obj3);
+
+// const obj = {};
+// Object.defineProperty(obj, "age", {
+//   value: 25,
+// });
+// console.log(obj.age);
+
+const users = [
+  {
+    id: 1,
+    email: "z@gmail.com",
+  },
+  {
+    id: 2,
+    email: "z@gmail.com",
+  },
+  {
+    id: 3,
+    email: "z@gmail.com",
+  },
+];
+//console.log(users[2].id);
+
 console.log(tindUser.hasOwnProperty("isLoggedIn"));
