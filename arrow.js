@@ -21,4 +21,21 @@ const user = {
 // user.name = "Hitesh";
 // user.welcomeMesg();
 
-console.log(this);
+//console.log(this);
+
+const chai = () => {
+  const username = "Aurwa";
+  console.log(this);
+};
+
+//chai();
+
+// const addNum = (num1, num2) => {
+//   return num1 + num2;
+// };
+
+// console.log(addNum(5, 5));
+
+//const addNum = (num1, num2) => num1 + num2;
+const addNum = (num1, num2) => ({ username: "Hitesh" });
+console.log(addNum(10, 10));
