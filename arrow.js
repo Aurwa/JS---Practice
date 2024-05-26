@@ -38,4 +38,13 @@ const chai = () => {
 
 //const addNum = (num1, num2) => num1 + num2;
 const addNum = (num1, num2) => ({ username: "Hitesh" });
-console.log(addNum(10, 10));
+//console.log(addNum(10, 10));
+
+// *********** IMMEDIATELY INVOKED FUNCTION EXPRESSIONS (IIFE) *********
+(function chai() {
+  console.log("DB Connected");
+})();
+
+((name) => {
+  console.log(`DB Connected Two ${name}`);
+})("Hitesh");
