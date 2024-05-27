@@ -33,23 +33,26 @@ let userLoggedInFromEmail = true;
 
 // ************** Switch in JS *************
 
-const month = 3;
+// const month = 3;
 
-switch (month) {
-  case 1:
-    console.log("Jan");
-    break;
-  case 2:
-    console.log("Feb");
-    break;
-  case 3:
-    console.log("Mar");
-    break;
-  case 4:
-    console.log("Apr");
-    break;
+// switch (month) {
+//   case 1:
+//     console.log("Jan");
+//     break;
+//   case 2:
+//     console.log("Feb");
+//     break;
+//   case 3:
+//     console.log("Mar");
+//     break;
+//   case 4:
+//     console.log("Apr");
+//     break;
 
-  default:
-    console.log("Default switch case");
-    break;
-}
+//   default:
+//     console.log("Default switch case");
+//     break;
+// }
+
+//*********** Falsy Values **************//
+// false, 0, -0, BigInt 0n, "", null, undefined, NaN
