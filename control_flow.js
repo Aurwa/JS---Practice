@@ -7,10 +7,13 @@
 //   console.log("Temp is greater than 50");
 // }
 
-const score = 200;
-if (score > 100) {
-  const power = "fly";
-  console.log(`Power: ${power}`);
-}
+// const score = 200;
+// if (score > 100) {
+//   const power = "fly";
+//   console.log(`Power: ${power}`);
+// }
 
 //console.log(power);
+
+const balance = 1000;
+if (balance > 500) console.log("test");
