@@ -15,5 +15,18 @@
 
 //console.log(power);
 
-const balance = 1000;
-if (balance > 500) console.log("test");
+// const balance = 1000;
+// if (balance > 500) console.log("test");
+
+let userLoggedIn = true;
+let debitCard = true;
+let userLoggedInFromGoogle = false;
+let userLoggedInFromEmail = true;
+
+if (userLoggedIn && debitCard) {
+  console.log("Let user buy the course");
+}
+
+if (userLoggedInFromEmail || userLoggedInFromGoogle) {
+  console.log("User logged in");
+}
