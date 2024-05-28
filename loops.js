@@ -121,6 +121,7 @@ function print(item) {
 //   console.log(val, index, arr);
 // });
 
+/*
 const myLang = [
   { num: 1, lang: "JS" },
   { num: 2, lang: "java" },
@@ -132,6 +133,7 @@ myLang.forEach((item) => {
   console.log("Item: ", item);
   console.log(item.lang);
 });
+*/
 
 // const numbers = [1, 2, 3, 4, 5];
 // for (const num of numbers) {
@@ -191,4 +193,30 @@ for (const property in obj2) {
 const language = ["python", "java"];
 for (const key in language) {
   //console.log(language[key]);
+}
+
+const person = {
+  name: "John",
+  age: 30,
+};
+
+//console.log(Object.values(person)[0]);
+
+const obj1 = { a: 1, b: 2, c: 3 };
+for (const prop in obj1) {
+  //console.log(prop);
+}
+
+/*
+Maps, on the other hand, are a type of iterable object that stores key-value pairs, but they don't have property names in the classical sense.
+
+In a Map, the keys are not property names, but rather separate entities that are used to store and retrieve values. As a result, for...in doesn't know how to iterate over the keys of a Map.
+*/
+const myMap = new Map();
+myMap.set("A", "Apple");
+myMap.set("B", "Banana");
+myMap.set("C", "Cherry");
+
+for (const prop in myMap) {
+  console.log(prop);
 }
