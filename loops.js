@@ -55,6 +55,51 @@ while (j < myArr.length) {
 
 let score = 1;
 do {
-  console.log(score);
+  //console.log(score);
   score++;
 } while (score <= 5);
+
+//for of loop
+const arr = [1, 2, 3, 4, 5];
+for (const num of arr) {
+  //console.log(num);
+}
+
+const greeting = "Hello World!";
+for (const greet of greeting) {
+  if (greet == " ") {
+    continue;
+  }
+  //console.log(greet);
+}
+
+const map = new Map();
+map.set("Pak", "Pakistan");
+map.set("Fr", "France");
+
+for (const [key, value] of map) {
+  //console.log(`${key} : ${value}`);
+}
+
+const myObj = {
+  js: "javascript",
+  c: "c plus plus",
+  rb: "ruby",
+};
+
+for (const key in myObj) {
+  //console.log(myObj[key]);
+}
+
+const lang = ["java", "ruby", "python"];
+for (const key in lang) {
+  //console.log(lang[key]);
+}
+
+const newMap = new Map();
+newMap.set("A", "apple");
+newMap.set("B", "Banana");
+
+for (const [key, value] of newMap) {
+  console.log(`${key} : ${value}`);
+}
