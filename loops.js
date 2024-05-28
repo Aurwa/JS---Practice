@@ -101,5 +101,32 @@ newMap.set("A", "apple");
 newMap.set("B", "Banana");
 
 for (const [key, value] of newMap) {
-  console.log(`${key} : ${value}`);
+  //console.log(`${key} : ${value}`);
 }
+
+// const arr1 = ["ruby", "python", "java"];
+// arr1.forEach(function (val) {
+//   console.log(val);
+// });
+// arr1.forEach((val) => console.log(val));
+
+const arr1 = ["ruby", "python", "java"];
+
+function print(item) {
+  console.log(item);
+}
+
+// arr1.forEach(print);
+// arr1.forEach((val, index, arr) => {
+//   console.log(val, index, arr);
+// });
+
+const myLang = [
+  { num: 1, lang: "JS" },
+  { num: 2, lang: "java" },
+  { num: 3, lang: "python" },
+];
+
+myLang.forEach((item) => {
+  console.log(item.lang);
+});
