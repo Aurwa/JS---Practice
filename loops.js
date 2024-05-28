@@ -128,5 +128,67 @@ const myLang = [
 ];
 
 myLang.forEach((item) => {
+  //console.log(`Item: ${item}`);
+  console.log("Item: ", item);
   console.log(item.lang);
 });
+
+// const numbers = [1, 2, 3, 4, 5];
+// for (const num of numbers) {
+//   console.log(num);
+// }
+
+const greetings = "Hello World!";
+for (const greet of greetings) {
+  if (greet == " ") {
+    continue;
+  }
+  //console.log(greet);
+}
+
+const map1 = new Map();
+map1.set("A", "Apple");
+map1.set("B", "Banana");
+map1.set("O", "Orange");
+for (const [key, val] of map1) {
+  //console.log(`${key} : ${val}`);
+  // console.log(`${val}`);
+}
+
+//==========================================
+// const map1 = new Map();
+// map1.set("A", "Apple");
+// map1.set("B", "Banana");
+// map1.set("O", "Orange");
+// for (const key in map1) {
+//   console.log(key);
+// }
+
+//================== WAY 1
+const obj = {
+  js: "javascript",
+  py: "python",
+  rb: "ruby",
+};
+
+//console.log(`Method 1`);
+for (const key in obj) {
+  //console.log(`${key} : ${obj[key]}`);
+}
+
+// ============= WAY 2
+const obj2 = {
+  js: "javascript",
+  py: "python",
+  rb: "ruby",
+};
+
+//console.log(`Method 2`);
+for (const property in obj2) {
+  //console.log(` ${property} : ${obj2[property]}`);
+}
+
+const language = ["python", "java"];
+for (const key in language) {
+  //console.log(language[key]);
+}
