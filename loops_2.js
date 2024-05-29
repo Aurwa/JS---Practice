@@ -57,6 +57,7 @@ console.log(bookTitle);
 using map() is more semantically correct and clear in this case because map() is typically used for transforming elements, while filter() is used for selecting elements based on a condition. Since you're specifically interested in transforming the elements (extracting the titles), map() is more suitable here.
 */
 
+/*
 const books = [
   { title: "Book 1", genre: "fiction", publish: 1990, edition: 2000 },
   { title: "Book 2", genre: "comedy", publish: 1991, edition: 2001 },
@@ -70,3 +71,23 @@ const newBooks = books.filter(
   (book) => book.publish > 1992 && book.genre === "horror"
 );
 console.log(newBooks);
+*/
+
+const myNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// with map()
+//const newNum = myNumbers.map((num) => num + 10);
+//console.log(newNum);
+
+// with for each()
+// myNumbers.forEach((num) => {
+//   console.log(num + 10);
+// });
+
+//Chaining
+const newNum = myNumbers
+  .map((num) => num * 10)
+  .map((num) => num + 1)
+  .filter((num) => num > 40);
+
+console.log(newNum);
