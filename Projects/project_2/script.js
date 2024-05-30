@@ -24,7 +24,10 @@ form.addEventListener("submit", (e) => {
   }
   if (bmi < 18.6) {
     result.innerHTML = `<span>${bmi} kg/m2</span><br><span>You are under weight </span>`;
-  } else if ((bmi = 24.9)) {
+  } else if (bmi == 18.6 && bmi <= 24.9) {
+    result.innerHTML = `<span>${bmi} kg/m2</span><br><span>Your BMI is normal </span>`;
+  } else {
+    result.innerHTML = `<span>${bmi} kg/m2</span><br><span>You are over weight </span>`;
   }
   heightInput.value = "";
   weightInput.value = "";
