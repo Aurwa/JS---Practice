@@ -73,7 +73,7 @@ function renderTable() {
   keyPresses.forEach((keyPress) => {
     tableBody.innerHTML += `
   <tr>
-    <td>${keyPress.key}</td>
+    <td>${keyPress.key === " " ? "Space" : keyPress.key}</td>
     <td>${keyPress.keyCode}</td>
     <td>${keyPress.code}</td>
   </tr>
