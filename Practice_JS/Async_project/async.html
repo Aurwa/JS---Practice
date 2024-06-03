@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Chai aur Code</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+  </body>
+  <!-- <script src="async.js"></script> -->
+  <script>
+    // setTimeOut //
+
+    // const sayJS = function () {
+    //   console.log("Javascript");
+    // };
+    // setTimeout(sayJS, 2000);
+
+    // const changeText = function () {
+    //   let h1 = document.querySelector("h1");
+    //   h1.innerText = "Best Javascript Series";
+    // };
+    // const change = setTimeout(changeText, 3000);
+    // document.querySelector("#stop").addEventListener("click", function () {
+    //   clearTimeout(change);
+    // });
+
+    // setInterval
+
+    let intervalId;
+
+    const hey = function (str) {
+      console.log(str);
+    };
+
+    document.querySelector("#start").addEventListener("click", function () {
+      intervalId = setInterval(hey, 1000, "hi");
+    });
+
+    document.querySelector("#stop").addEventListener("click", function () {
+      clearInterval(intervalId);
+    });
+  </script>
+</html>
