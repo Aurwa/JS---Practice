@@ -10,6 +10,7 @@
   </body>
 
   <script>
+    /*
     const animal = {
       type: "monkey",
     };
@@ -31,5 +32,23 @@
     animal.hello();
     console.log(Object.getOwnPropertyNames(animal));
     console.log(Object.getPrototypeOf(animal));
+    */
+
+    //__proto__: Array.prototype
+
+    // String.prototype.boop = () => {
+    //   console.log("Boop");
+    // };
+
+    //String.prototype.boop();
+
+    // const cat = "meow";
+    // cat.boop();
+
+    // console.log(Object.getOwnPropertyNames(cat));
+
+    // Ques 1
+    console.log(Object.getOwnPropertyNames(Object.prototype));
+    console.log(Object.getOwnPropertyNames(Array.prototype));
   </script>
 </html>
