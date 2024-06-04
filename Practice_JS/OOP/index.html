@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Protypal Inheritance</h1>
+  </body>
+
+  <script>
+    const animal = {
+      type: "monkey",
+    };
+    //console.log("Before: ");
+    //console.log(Object.getPrototypeOf(animal));
+
+    // Setting Speak method on Object Prototype
+    // Object.prototype.speak = () => {
+    //   console.log("Hi");
+    // };
+
+    // animal.speak();
+    // console.log("After: ");
+    //console.log(Object.getPrototypeOf(animal));
+    //console.log(animal);
+    Object.prototype.hello = () => {
+      console.log("Hello from animal");
+    };
+    animal.hello();
+    console.log(Object.getOwnPropertyNames(animal));
+    console.log(Object.getPrototypeOf(animal));
+  </script>
+</html>
