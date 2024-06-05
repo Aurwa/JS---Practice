@@ -48,7 +48,62 @@
     // console.log(Object.getOwnPropertyNames(cat));
 
     // Ques 1
+    /*
     console.log(Object.getOwnPropertyNames(Object.prototype));
     console.log(Object.getOwnPropertyNames(Array.prototype));
+    const arrayPrototype = Array.prototype;
+    const arrProtoProto = Object.getPrototypeOf(arrayPrototype);
+    console.log(Object.getOwnPropertyNames(arrProtoProto));
+    */
+
+    // Ques 2
+    /*
+    // Way 1
+    const fakeArray = {
+      0: "Zero",
+      1: "One",
+      2: "Two",
+      length: 3,
+      __proto__: Array.prototype,
+    };
+
+    const res = fakeArray.map((num) => {
+      return num;
+    });
+
+    console.log(res);
+
+    // Way 2
+    fakeArray.map((item) => console.log(item));
+    */
+
+    // Ques 3
+    /*
+    let store = {
+      name: null,
+      stock: [
+        { name: "candy", quntity: 100 },
+        { name: "fruit", quntity: 7 },
+        { name: "toys", quntity: 23 },
+      ],
+    };
+
+    let myStore = {};
+    myStore.name = "My wonderful store";
+    //myStore.__proto__ = store;
+    Object.setPrototypeOf(myStore, store);
+    myStore.stock[1].quntity = 300;
+    console.log(myStore.name);
+    console.log(myStore.stock);
+    // console.log(store.__proto__);
+    // console.log(myStore.__proto__);
+
+    let yourStore = {};
+    yourStore.name = "Not my wonderful store";
+    yourStore.__proto__ = store;
+    console.log(yourStore.stock);
+    console.log(store.stock);
+    // console.log(yourStore.__proto__);
+    */
   </script>
 </html>
