@@ -1,3 +1,5 @@
+"use strict";
+
 /*
 const thor = {
   name: "Thor",
@@ -67,6 +69,7 @@ jade.friend.greet.apply({ name: "Aurwa" });
 jade.friend.greet.apply({ name: "Mia" }, [1, 2, 3]);
 */
 
+/*
 function Hero(name) {
   this.name = name;
   this.greet = function () {
@@ -82,3 +85,31 @@ console.log(Object.getOwnPropertyNames(storm));
 //console.log(Object.getOwnPropertyNames(storm.__proto__));
 // console.log(storm.__proto__.constructor);
 console.log(storm.__proto__.constructor.name);
+*/
+
+// global scope
+//console.log(this);
+
+// inside function
+function x() {
+  console.log(this);
+}
+
+//x();
+//window.x();
+
+const student1 = {
+  name: "Ranveer",
+  printName: function () {
+    console.log(this);
+    console.log(this.name);
+  },
+};
+
+student1.printName();
+
+const student2 = {
+  name: "Deepika",
+};
+
+student1.printName.call(student2);
