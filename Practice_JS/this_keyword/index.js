@@ -262,14 +262,80 @@ let newCall = call.anotherCaller;
 newCall();
 */
 
-const outer = {
-  name: "Outer",
-  inner: {
-    name: "Inner",
-    showThis: function () {
-      console.log(this);
-    },
-  },
+// const outer = {
+//   name: "Outer",
+//   inner: {
+//     name: "Inner",
+//     showThis: function () {
+//       console.log(this);
+//     },
+//   },
+// };
+
+// outer.inner.showThis(); // What is logged?
+
+// function multipleBy5(num) {
+//   return num * 5;
+// }
+
+// multipleBy5.power = 5;
+// console.log(multipleBy5(5));
+// console.log(multipleBy5.power);
+
+// function createUser(username, score) {
+//   this.username = username;
+//   this.score = score;
+// }
+
+// createUser.prototype.increment = function () {
+//   console.log(this.score++);
+// };
+
+// createUser.prototype.printMe = function () {
+//   console.log(`Price is: ${this.score}`);
+// };
+
+// const chai = new createUser("Chai", 25);
+// const tea = new createUser("Tea", 250);
+
+// chai.printMe();
+// chai.increment();
+
+// let myHeros = ["thor", "spiderman"];
+
+// let heroPower = {
+//   thor: "hammer",
+//   spiderman: "sling",
+
+//   getSpiderPower: function () {
+//     console.log(`Spiderman power is ${this.spiderman}`);
+//   },
+// };
+
+// heroPower.getSpiderPower();
+
+const User = {
+  name: "Chai",
+  email: "chai@google.com",
 };
 
-outer.inner.showThis(); // What is logged?
+const Teacher = {
+  makeVideo: true,
+};
+
+const TeachingSupport = {
+  isAvailable: false,
+};
+
+const TASupport = {
+  makeAssignment: "JS assignment",
+  fullTime: true,
+  __proto__: TeachingSupport,
+};
+
+// TASupport.__proto__ = TeachingSupport;
+Teacher.__proto__ = User;
+Object.setPrototypeOf(TeachingSupport, Teacher);
+
+let anotherUsername = "ChaiAurCode   ";
+//String.prototype.trueLenght
