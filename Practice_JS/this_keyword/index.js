@@ -1,4 +1,4 @@
-"use strict";
+//"use strict";
 
 /*
 const thor = {
@@ -87,6 +87,7 @@ console.log(Object.getOwnPropertyNames(storm));
 console.log(storm.__proto__.constructor.name);
 */
 
+/*
 // global scope
 //console.log(this);
 
@@ -106,10 +107,169 @@ const student1 = {
   },
 };
 
-student1.printName();
+//student1.printName();
 
 const student2 = {
   name: "Deepika",
 };
 
-student1.printName.call(student2);
+//student1.printName.call(student2);
+
+//1
+const obj = {
+  num: 10,
+  x: () => {
+    console.log(this);
+  },
+};
+
+obj.x();
+
+//2
+const obj2 = {
+  a: 20,
+  x: function () {
+    const y = () => {
+      console.log(this);
+    };
+    y();
+  },
+};
+
+obj2.x();
+*/
+
+// This Exercise
+
+// const book = {
+//   name: "Harry Potter",
+//   author: "J.K. Rowling",
+//   characters: {
+//     mainChars: ["Harry", "Ron", "Hermione"],
+//     list: function () {
+//       for (const char of this.mainChars) {
+//         console.log(char);
+//       }
+//     },
+//   },
+// };
+
+// // call the list func
+
+// //book.characters.list();
+// const newChars = book.characters.list.bind({
+//   mainChars: ["Draco", "Severus", "Voldemort"],
+// });
+// newChars();
+
+// function Person(name, age, favFood) {
+//   this.name = name;
+//   this.age = age;
+//   this.favFood = favFood;
+// }
+
+// const avery = Person("Avery", 20, "Dark Chocolate");
+// console.log(avery);
+// const jackie = new Person("Jackie", 35, "Sourdough Bread");
+
+// console.log(jackie);
+// console.log(jackie.__proto__);
+// console.log(jackie.__proto__.__proto__);
+// console.log(jackie.__proto__.__proto__.__proto__);
+
+// function ThisPerson(name, age, favFood) {
+//   this.name = name;
+//   this.age = age;
+//   this.favFood = favFood;
+// }
+
+// function ProtoPerson(name, age, favFood) {
+//   return {
+//     name,
+//     age,
+//     favFood,
+//   };
+// }
+
+// const thisPerson = new ThisPerson("This", 0, "cookies");
+// const protoPerson = ProtoPerson("Proto", 1, "?");
+
+// console.log(Object.getOwnPropertyNames(protoPerson));
+//console.log(protoPerson);
+
+/*
+function Person(name, age, favFood) {
+  this.name = name;
+  this.age = age;
+  this.favFood = favFood;
+}
+
+Person.prototype.greet = function () {
+  console.log(`${this.name} says Hello!`);
+};
+
+function SuperHero(name, age, favFood, overpowered) {
+  this.name = name;
+  this.age = age;
+  this.favFood = favFood;
+  this.overpowered = overpowered;
+}
+
+SuperHero.prototype.__proto__ = Person.prototype;
+//SuperHero.prototype = Person.prototype;
+
+const anya = new Person("Anya", 40, "Sour Keys");
+const batman = new SuperHero("Bruce", 33, "Steak");
+
+// console.log(anya);
+// console.log(batman);
+// console.log("-----------");
+// console.log(anya.__proto__.constructor.name);
+// console.log(anya.__proto__.__proto__.constructor.name);
+// console.log("---------------");
+
+// console.log(batman.__proto__.constructor.name);
+// console.log(batman.__proto__.__proto__.constructor.name);
+console.log("----------------");
+// batman.greet();
+// console.log("----------------");
+// console.log(Object.getOwnPropertyNames(anya));
+// console.log(Object.getOwnPropertyNames(batman));
+console.log(Person);
+console.log(Person.prototype);
+console.log(Person.prototype.__proto__);
+console.log("--------------");
+console.log(SuperHero);
+console.log(SuperHero.prototype);
+console.log(SuperHero.prototype.__proto__);
+*/
+
+/*
+function anotherCaller() {
+  console.log(`${this.caller} called, too!`);
+}
+
+const call = {
+  caller: "mom",
+  anotherCaller: anotherCaller,
+  says: function () {
+    console.log(`Hey, ${this.caller} just called.`);
+  },
+};
+// call.anotherCaller();
+let newCall = call.anotherCaller;
+
+newCall();
+*/
+
+const outer = {
+  name: "Outer",
+  inner: {
+    name: "Inner",
+    showThis: function () {
+      console.log(this);
+    },
+  },
+};
+
+outer.inner.showThis(); // What is logged?
