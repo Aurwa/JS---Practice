@@ -301,18 +301,16 @@ newCall();
 // chai.printMe();
 // chai.increment();
 
-// let myHeros = ["thor", "spiderman"];
+let myHeros = ["thor", "spiderman"];
 
-// let heroPower = {
-//   thor: "hammer",
-//   spiderman: "sling",
+let heroPower = {
+  thor: "hammer",
+  spiderman: "sling",
 
-//   getSpiderPower: function () {
-//     console.log(`Spiderman power is ${this.spiderman}`);
-//   },
-// };
-
-// heroPower.getSpiderPower();
+  getSpiderPower: function () {
+    console.log(`Spiderman power is ${this.spiderman}`);
+  },
+};
 
 const User = {
   name: "Chai",
@@ -338,4 +336,10 @@ Teacher.__proto__ = User;
 Object.setPrototypeOf(TeachingSupport, Teacher);
 
 let anotherUsername = "ChaiAurCode   ";
-//String.prototype.trueLenght
+String.prototype.trueLenght = function () {
+  console.log(`${this}`);
+  console.log(`${this.name}`);
+  console.log(`True length is: ${this.trim().length}`);
+};
+
+anotherUsername.trueLenght();
