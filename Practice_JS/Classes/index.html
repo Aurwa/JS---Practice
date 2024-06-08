@@ -28,6 +28,7 @@
     console.log(chai.changeUsername());
     */
 
+    /*
     class User {
       constructor(username) {
         this.username = username;
@@ -55,5 +56,33 @@
 
     // const person = new User("Anna");
     // person.logMe();
+    */
+
+    class User {
+      constructor(username) {
+        this.username = username;
+      }
+
+      logMe() {
+        console.log(`Username: ${this.username}`);
+      }
+
+      static createId() {
+        return `123`;
+      }
+    }
+
+    const hitesh = new User("hitesh");
+    //console.log(User.createId());
+
+    class Teacher extends User {
+      constructor(username, email) {
+        super(username);
+        this.email = email;
+      }
+    }
+
+    const iphone = new Teacher("iphone", "iphone@apple.com");
+    iphone.logMe();
   </script>
 </html>
